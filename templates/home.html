@@ -1,5 +1,18 @@
-{% extends "layout.html" %}
-{% block title %}Home{% endblock %}
-{% block content %}
-    <p>This is the home page. It's not exciting yet...</p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Wikipedia Search</h1>
+    <p>Enter your search term below:</p>
+    <form action="{{ url_for('search') }}" method="post">
+        <input type="text" name="search" placeholder="Search term" required>
+        <input type="submit" value="Search">
+    </form>
+    <p><a href="{{ url_for('about') }}">About</a></p>
+</body>
+</html>
