@@ -1,5 +1,16 @@
-{% extends "layout.html" %}
-{% block title %}Home{% endblock %}
-{% block content %}
-    <p>My first flash project!</p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <h1>About Wikipedia Search</h1>
+    <p>This is a simple Flask application that allows you to search for Wikipedia pages and view their summaries.</p>
+    <p>It uses the Wikipedia API to fetch search results and displays them to the user.</p>
+    <p>Created by [Jason Elmer Borisman]</p>
+    <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+</body>
+</html>
